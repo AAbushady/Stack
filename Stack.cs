@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Stack
 {
     public class Stack
     {
-        private readonly ArrayList _stack = new ArrayList();
+        private readonly List<object> _stack = new List<object>();
 
         // Stores an object on the stack.
         public void Push(object obj)
