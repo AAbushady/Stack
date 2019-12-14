@@ -35,7 +35,7 @@ namespace Stack
             }
 
             stack.Push("Hello");
-            stack.Push(" ");
+            stack.Push(123);
             stack.Push("World");
 
             stack.Clear();

@@ -27,9 +27,11 @@ namespace Stack
                 throw new InvalidOperationException("Cannot pop a value from an empty stack.");
             }
 
-            var pop = _stack[_stack.Count - 1];
+            var index = _stack.Count - 1;
 
-            _stack.RemoveAt(_stack.Count - 1);
+            var pop = _stack[index];
+
+            _stack.RemoveAt(index);
 
             return pop;
         }
